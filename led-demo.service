@@ -1,0 +1,12 @@
+[Unit]
+Description=LED Display Demo
+
+[Service]
+Type=simple
+ExecStart=/home/pi/led-demo/start.sh
+Restart=always
+WorkingDirectory=/home/pi/led-demo
+
+[Install]
+WantedBy=multi-user.target
+
